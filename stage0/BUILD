@@ -27,6 +27,7 @@ rust_library(
     srcs = glob(["src/**"]),
     crate_features = [
         "sev",
+	"sev_kernel_hashes",
     ],
     target_compatible_with = any_platform([
         "//:x86_64-none-setting",
